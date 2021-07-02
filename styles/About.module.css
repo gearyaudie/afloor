@@ -1,0 +1,107 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 70vh;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about h1 {
+  font-size: 6em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.about p {
+  color: #808080;
+  line-height: 0.5;
+}
+
+.CheckUs {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.CheckUs img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.CheckUs .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5em;
+  /* padding: 3em; */
+  color: white;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.CheckUs .container p {
+  padding: 1em;
+}
+
+.CheckUs .container .btn {
+  background: #000;
+  border: 2px solid #fe5464;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  margin-left: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+.CheckUs .container .btn a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.CheckUs .container .btn:hover {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  color: #fe5464;
+  font-weight: 700;
+  padding: 1em 2em;
+  margin-left: 1em;
+}
+
+.ThirdSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 65vh;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ThirdSection h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.ThirdSection p,
+.ThirdSection a {
+  color: #808080;
+  line-height: 0.2;
+}
+
+.ThirdSection p:hover,
+.ThirdSection a:hover {
+  color: #fe5464;
+}
+
+.ThirdSection .special {
+  color: #fe5464;
+  padding-right: 0.5em;
+}
