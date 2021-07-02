@@ -33,7 +33,7 @@ const Home: React.FC<Props> = ({ posts }) => {
         <div className="container">
           <div className="posts">
             {posts.map((post, index) => (
-              <Post post={post} />
+              <Post post={post} key={index} />
             ))}
           </div>
         </div>

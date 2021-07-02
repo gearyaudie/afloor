@@ -21,7 +21,7 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
       </p>
       <div className={homeStyles.btnContainer}>
         <button className={homeStyles.btn} onClick={handleShowPost}>
-          LET'S GO
+          LETS GO
         </button>
       </div>
     </div>
