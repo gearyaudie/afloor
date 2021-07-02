@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import AboutStyles from "../styles/About.module.css";
 
 const about = () => {
   return (
     <>
       <div className={AboutStyles.about}>
-        <h1>WHAT'S UP</h1>
+        <h1>WHATS UP</h1>
         <p>with this seemingly useless website.</p>
         <p>well, that is a good question and it is a </p>
         <p>template to be used for future projects.</p>
@@ -22,7 +23,7 @@ const about = () => {
               necessitatibus porro natus. Iusto, veniam.
             </p>
             <button className={AboutStyles.btn}>
-              <a href="/">Learn More</a>
+              <Link href="/">Learn More</Link>
             </button>
           </div>
         </div>
