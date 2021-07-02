@@ -28,9 +28,6 @@ const Home: React.FC<Props> = ({ posts }) => {
 
   return (
     <>
-      <Head>
-        <title>Dev Blog</title>
-      </Head>
       <HomeComponent showPost={showPost} setShowPost={setShowPost} />
       {showPost && (
         <div className="container">
