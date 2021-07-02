@@ -13,9 +13,9 @@ const about = () => {
       </div>
       <div className={AboutStyles.CheckUs}>
         <div className={AboutStyles.container}>
-          <>
+          <div className={AboutStyles.imgContainer}>
             <img src="/images/posts/img5.jpg" alt="" />
-          </>
+          </div>
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
@@ -41,7 +41,7 @@ const about = () => {
         <p>
           {" "}
           <span className={AboutStyles.special}>web: </span>{" "}
-          <a href="gearyaudie.com">gearyaudie.com</a>
+          <a href="https://www.gearyaudie.com">gearyaudie.com</a>
         </p>
       </div>
     </>
