@@ -29,15 +29,15 @@ const Home: React.FC<Props> = ({ posts }) => {
   return (
     <>
       <HomeComponent showPost={showPost} setShowPost={setShowPost} />
-      {showPost && (
-        <div className="container">
+      {/* {showPost && ( */}
+      {/* <div className="container">
           <div className="posts">
             {posts.map((post, index) => (
               <Post post={post} key={index} />
             ))}
           </div>
-        </div>
-      )}
+        </div> */}
+      {/* )} */}
     </>
   );
 };

@@ -10,9 +10,12 @@
 }
 
 .about h1 {
-  font-size: 6em;
+  font-size: 50px;
   font-weight: 700;
-  margin-bottom: 0.5em;
+}
+
+.about h1 span {
+  color: #fe5464;
 }
 
 .about p {
@@ -36,6 +39,7 @@
 
 .CheckUs img {
   width: 100%;
+
   border-radius: 1em;
 }
 
@@ -54,7 +58,7 @@
   padding: 1em;
 }
 
-.CheckUs .container .btn {
+.btn {
   background: #000;
   border: 2px solid #fe5464;
   border-radius: 0.5em;
@@ -63,12 +67,12 @@
   transition: 0.2s ease-in-out;
 }
 
-.CheckUs .container .btn a {
+.btn a {
   color: #fff;
   font-weight: 700;
 }
 
-.CheckUs .container .btn:hover {
+.btn:hover {
   background: #000;
   border: 2px solid #fff;
   border-radius: 0.5em;
@@ -76,6 +80,33 @@
   font-weight: 700;
   padding: 1em 2em;
   margin-left: 1em;
+}
+
+.contactBtn {
+  background: #fff;
+  border: 2px solid #fe5464;
+  border-radius: 0.5em;
+  color: #fe5464;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 15px 35px;
+  margin-left: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+.contactBtn:hover {
+  background: #333;
+  border: 2px solid #fff;
+  color: #fff !important;
+}
+
+.contactBtn a {
+  color: #fe5464 !important;
+}
+
+.contactBtn a:hover {
+  font-weight: bold;
+  color: #fff !important;
 }
 
 .ThirdSection {
