@@ -11,6 +11,10 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
     window.open("https://www.tokopedia.com/afloor", "_blank");
   };
 
+  const openLink = (link: string) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <div className={homeStyles.bg}>
       {/* <img src="https://i.ibb.co/nshmNyb/bg.jpg" alt="" /> */}
@@ -18,7 +22,7 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
         <div className={homeStyles.flex}>
           <div className={homeStyles.homeWelcome}>
             <h1>
-              welcome to <span>afloor</span>
+              welcome to a<span className={homeStyles.textPrimary}>floor</span>
             </h1>
             <p>
               Menjual berbagai jenis aksesoris lantai, pvc dan vinyl. Klik
@@ -66,19 +70,41 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           <div className={homeStyles.card}>
             <div className={homeStyles.flexCenter}>
               <p>Aksesoris parket / vinyl</p>
-              <button>Lihat</button>
+              <button
+                onClick={() =>
+                  openLink(
+                    "https://www.tokopedia.com/afloor/etalase/aksesoris-parketvinyl"
+                  )
+                }
+              >
+                Lihat
+              </button>
             </div>
           </div>
           <div className={[homeStyles.card, homeStyles.card2].join(" ")}>
             <div className={homeStyles.flexCenter}>
-              <p>Lantai vinyl / parket</p>
-              <button>Lihat</button>
+              <p>Amplop bubble</p>
+              <button
+                onClick={() =>
+                  openLink(
+                    "https://www.tokopedia.com/afloor/etalase/amplop-bubble"
+                  )
+                }
+              >
+                Lihat
+              </button>
             </div>
           </div>
           <div className={[homeStyles.card, homeStyles.card3].join(" ")}>
             <div className={homeStyles.flexCenter}>
               <p>Lem vinyl/PVC flooring</p>
-              <button>Lihat</button>
+              <button
+                onClick={() =>
+                  openLink("https://www.tokopedia.com/afloor/etalase/lem")
+                }
+              >
+                Lihat
+              </button>
             </div>
           </div>
         </div>
