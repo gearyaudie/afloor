@@ -79,6 +79,9 @@ $text-color: #808080;
       width: 265px;
       right: 20px;
     }
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
 
   h1 {
@@ -92,10 +95,6 @@ $text-color: #808080;
 
   p {
     color: $text-color;
-    @media (max-width: 600px) {
-      color: #333;
-      font-weight: 600;
-    }
   }
 
   .imgContainer {
@@ -145,6 +144,7 @@ $text-color: #808080;
     max-width: 185px;
     width: 100%;
     margin: 0px 20px;
+    cursor: pointer;
   }
 }
 
@@ -180,7 +180,6 @@ $text-color: #808080;
   }
 
   .card {
-    // background-color: #f1d2b5;
     background-color: #3a4ec4;
 
     padding: 25px 15px;
@@ -188,7 +187,7 @@ $text-color: #808080;
 
     min-width: 250px;
     flex-grow: 1;
-    height: 175px;
+    height: 200px;
     text-align: center;
 
     p {
@@ -210,13 +209,19 @@ $text-color: #808080;
       }
     }
 
+    .icon {
+      width: 35px;
+      padding-bottom: 10px;
+    }
+
     button {
       background-color: #fff;
-      border: 1px solid #808080;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
       cursor: pointer;
 
       padding: 10px 20px;
-      margin: 15px 0px 5px;
+      margin: 15px 0px;
       width: 100%;
 
       font-weight: 500;

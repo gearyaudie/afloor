@@ -50,11 +50,13 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
             src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/871069d8.png"
             alt=""
             className={homeStyles.logoImg}
+            onClick={() => openLink("https://www.tokopedia.com/afloor")}
           />
           <img
             src="https://i.ibb.co/SQ9MKXG/PXPNG-COM-SHOPEE-WHITE-LOGO-TRANSPARENT-1550x767.png"
             alt=""
             className={homeStyles.logoImg}
+            onClick={() => openLink("https://shopee.co.id/afloor88")}
           />
           <img
             src="https://i.ibb.co/fGsXwjg/lazada-white-noloho.png"
@@ -70,6 +72,10 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           <div className={homeStyles.card}>
             <div className={homeStyles.flexCenter}>
               <p>Aksesoris parket / vinyl</p>
+              <img
+                src="https://i.ibb.co/s5RG01W/wood-1.png"
+                className={homeStyles.icon}
+              />
               <button
                 onClick={() =>
                   openLink(
@@ -84,6 +90,11 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           <div className={[homeStyles.card, homeStyles.card2].join(" ")}>
             <div className={homeStyles.flexCenter}>
               <p>Amplop bubble</p>
+              <img
+                src="https://i.ibb.co/sQp6mrL/email.png"
+                alt=""
+                className={homeStyles.icon}
+              />
               <button
                 onClick={() =>
                   openLink(
@@ -98,6 +109,11 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           <div className={[homeStyles.card, homeStyles.card3].join(" ")}>
             <div className={homeStyles.flexCenter}>
               <p>Lem vinyl/PVC flooring</p>
+              <img
+                src="https://i.ibb.co/Kxppwx0/bucket.png"
+                alt=""
+                className={homeStyles.icon}
+              />
               <button
                 onClick={() =>
                   openLink("https://www.tokopedia.com/afloor/etalase/lem")
@@ -146,8 +162,8 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
             a<span className={homeStyles.textPrimary}>floor</span>
           </h1>
           <p>
-            Call: +60143133567 | WhatsApp: +60143133567 | email:
-            rachmansaleh@yahoo.com
+            Call: 0856-1153-725 | WhatsApp: +62 856-1153-725 | email:
+            rachman_saleh@yahoo.com
           </p>
         </div>
       </div>
