@@ -155,6 +155,33 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
         </div>
         <div></div>
       </div>
+      <div className={homeStyles.reviewContainer}>
+        <div className={homeStyles.reviewBg}></div>
+        <div className={homeStyles.overlay}>
+          <div className={homeStyles.reviewContent}>
+            <h1>Leave a review for us</h1>
+            <div>
+              {Array.from({ length: 5 }, (_, i) => (
+                <img
+                  src="https://i.ibb.co/j3BSYPQ/pngfind-com-white-stars-png-297637.png"
+                  alt=""
+                  className={homeStyles.reviewIcon}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={() =>
+                openLink(
+                  "https://www.google.com/search?q=afloor&oq=afloor+&aqs=chrome.0.69i59j0i10i512j69i60l6.1510j0j4&sourceid=chrome&ie=UTF-8#lrd=0x2e69f5bc3436bd21:0x2856ebab429e5049,3,,,"
+                )
+              }
+            >
+              Write a review
+            </button>
+          </div>
+        </div>
+      </div>
 
       <div className={homeStyles.footer}>
         <div className={homeStyles.footerContent}>
