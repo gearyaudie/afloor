@@ -1,15 +1,38 @@
 import React, { Dispatch, SetStateAction } from "react";
 import homeStyles from "../styles/Home.module.scss";
 
-type ShowPost = {
-  showPost: boolean;
-  setShowPost: Dispatch<SetStateAction<boolean>>;
-};
-
-const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
+const HomeComponent: React.FC = () => {
   const handleShowPost = () => {
     window.open("https://www.tokopedia.com/afloor", "_blank");
   };
+
+  const [product, setProduct] = React.useState([
+    {
+      img: "https://i.ibb.co/cNMJnFQ/vinyl.jpg",
+      name: "Lantai vinyl / PVC motif kayu",
+      link: "https://www.tokopedia.com/afloor/lantai-vinyl-pvc-motif-kayu",
+    },
+    {
+      img: "https://i.ibb.co/JzvgNwh/afloor-accessories-2.jpg",
+      name: "Stepnosing untuk tangga lantai kayu, vinyl",
+      link: "https://www.tokopedia.com/afloor/sn-20-stepnosing-accesories-untuk-tangga-lantai-kayu-dan-vinyl-l-8",
+    },
+    {
+      img: "https://i.ibb.co/KzR7WJL/afloor-plin2.jpg",
+      name: "Skirting / plin untuk tangga lantai kayu, vinyl",
+      link: "https://www.tokopedia.com/afloor/skirting-plin-d076-accessories-untuk-lantai-kayu-parket-vinyl",
+    },
+    {
+      img: "https://i.ibb.co/RpHXNyM/afloor-endmolding2.jpg",
+      name: "End molding untuk lantai kayu, parket, vinyl",
+      link: "https://www.tokopedia.com/afloor/end-molding-l-8-accessories-untuk-lantai-kayu-parket-dan-vinyl",
+    },
+    {
+      img: "https://i.ibb.co/PwbvS9B/afloor-glue.jpg",
+      name: "Lem / Perkat lantai vinyl dan karpet (1 kg)",
+      link: "https://www.tokopedia.com/afloor/lem-perkat-untuk-lantai-vinyl-dan-karpet-isi-1-kg",
+    },
+  ]);
 
   const openLink = (link: string) => {
     window.open(link, "_blank");
@@ -17,7 +40,6 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
 
   return (
     <div className={homeStyles.bg}>
-      {/* <img src="https://i.ibb.co/nshmNyb/bg.jpg" alt="" /> */}
       <div className={homeStyles.home}>
         <div className={homeStyles.flex}>
           <div className={homeStyles.homeWelcome}>
@@ -125,6 +147,25 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           </div>
         </div>
       </div>
+      <div className={homeStyles.productSection}>
+        <div className={homeStyles.container}>
+          <h1>Produk kami</h1>
+          <div className={homeStyles.cardContainer}>
+            {product &&
+              product.map((x, i) => (
+                <div className={homeStyles.card} key={i}>
+                  <img
+                    src={x.img}
+                    alt="test"
+                    className={homeStyles.productImg}
+                  />
+                  <p>{x.name}</p>
+                  <button onClick={() => openLink(x.link)}>Kunjungi</button>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
       <div className={homeStyles.productImgSection}>
         <div className={homeStyles.flex}>
           <div>
@@ -166,6 +207,7 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
                   src="https://i.ibb.co/j3BSYPQ/pngfind-com-white-stars-png-297637.png"
                   alt=""
                   className={homeStyles.reviewIcon}
+                  key={i}
                 />
               ))}
             </div>
@@ -194,34 +236,6 @@ const HomeComponent: React.FC<ShowPost> = ({ showPost, setShowPost }) => {
           </p>
         </div>
       </div>
-
-      {/* <div className={homeStyles.imgContainer}>
-        <a href="https://www.tokopedia.com/afloor/etalase/aksesoris-parketvinyl">
-          <img
-            src="https://i.ibb.co/ZJGDwr7/aksesoris-lantai.jpg"
-            alt="test"
-            className={homeStyles.img}
-          />
-        </a>
-        <a href="https://www.tokopedia.com/afloor/etalase/lem">
-          <img
-            src="https://i.ibb.co/7p8Spsb/lem.webp"
-            alt=""
-            className={homeStyles.img}
-          />
-        </a>
-      </div>
-      <div className={homeStyles.imgContainer}>
-        <a href="https://www.tokopedia.com/afloor/etalase/amplop-bubble">
-          <img
-            src="https://i.ibb.co/ZMMvRDY/surat.webp"
-            alt=""
-            className={homeStyles.img}
-          />
-        </a>
-      </div> */}
-      {/* "https://i.ibb.co/9Hbh1Rh/various-color-variant.jpg"
-"https://i.ibb.co/qRHft43/welcome-to-afloor.jpg" */}
     </div>
   );
 };

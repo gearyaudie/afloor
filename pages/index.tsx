@@ -1,75 +1,25 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { sortByDate } from "../utils";
-import Post from "../components/Post";
 
-// Pure node extension
-import fs from "fs";
-import path from "path";
-
-// Frontmatter extension
-import matter from "gray-matter";
 import HomeComponent from "../components/HomeComponent";
 
-type Props = {
-  posts: {
-    slug: string;
-    frontmatter: {
-      title: string;
-      date: string;
-      excerpt: string;
-      cover_image: string;
-    };
-  }[];
-};
-
-const Home: React.FC<Props> = ({ posts }) => {
-  const [showPost, setShowPost] = useState(false);
-
+const Home = () => {
   return (
     <>
-      <HomeComponent showPost={showPost} setShowPost={setShowPost} />
-      {/* {showPost && ( */}
-      {/* <div className="container">
-          <div className="posts">
-            {posts.map((post, index) => (
-              <Post post={post} key={index} />
-            ))}
-          </div>
-        </div> */}
-      {/* )} */}
+      <Head>
+        <meta
+          name="keywords"
+          content="lem vinyl, lem aksesoris vinyl, aksesoris vinyl, aksesoris lantai vinyl, aksesoris pvc, lantai motif kayu pvc, harga lem vinyl, harga lantai vinyl, lantai vinyl murah, end molding, stepnosing, parket, lis kayu, afloor, efloor"
+        />
+        <meta
+          name="description"
+          content="Aksesoris lantai vinyl murah, lem untuk lantai vinyl, PVC, parket. "
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <HomeComponent />
     </>
   );
-};
-
-export const getStaticProps = async () => {
-  // Get files from the posts dir
-  const files = fs.readdirSync(path.join("posts"));
-
-  // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
-    // Create slug
-    const slug = filename.replace(".md", "");
-
-    // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf-8"
-    );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  return {
-    props: {
-      posts: posts.sort(sortByDate),
-    },
-  };
 };
 
 export default Home;

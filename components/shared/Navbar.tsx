@@ -19,13 +19,13 @@ const Navbar = () => {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link href="/about">
+              {/* <li>
+                <Link href="/artikel">
                   <a>
-                    <span className={navbarStyles.special}>2. </span>About
+                    <span className={navbarStyles.special}>2. </span>Artikel
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

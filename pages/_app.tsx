@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>afloor | aksesoris flooring vinyl, lem vinyl parket</title>
+        <title>Aksesoris lantai vinyl, parket, pvc | aFloor</title>
       </Head>
       <Navbar />
       <main>
