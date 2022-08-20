@@ -10,6 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Aksesoris lantai vinyl, parket, pvc | aFloor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="google-site-verification"
+          content="C6ukRtS-Ybo6PcbAdIumTlHrvKxlq9GK1uyOXDpyGPA"
+        />
       </Head>
       <Navbar />
       <main>
