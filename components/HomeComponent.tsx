@@ -59,7 +59,7 @@ const HomeComponent: React.FC = () => {
           <div>
             <img
               src="https://i.ibb.co/rQg80m2/pexels-maksim-goncharenok-4352247.webp"
-              alt=""
+              alt="afloor-homepage-img"
               className={homeStyles.mainImg}
             />
           </div>
@@ -70,19 +70,19 @@ const HomeComponent: React.FC = () => {
         <div className={homeStyles.imgContainer}>
           <img
             src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/871069d8.png"
-            alt=""
+            alt="afloor-tokopedia-logo"
             className={homeStyles.logoImg}
             onClick={() => openLink("https://www.tokopedia.com/afloor")}
           />
           <img
             src="https://i.ibb.co/SQ9MKXG/PXPNG-COM-SHOPEE-WHITE-LOGO-TRANSPARENT-1550x767.png"
-            alt=""
+            alt="afloor-shopee-logo"
             className={homeStyles.logoImg}
             onClick={() => openLink("https://shopee.co.id/afloor88")}
           />
           <img
             src="https://i.ibb.co/fGsXwjg/lazada-white-noloho.png"
-            alt=""
+            alt="afloor-lazada-logo"
             className={homeStyles.logoImg}
           />
         </div>
@@ -96,6 +96,7 @@ const HomeComponent: React.FC = () => {
               <p>Aksesoris parket / vinyl</p>
               <img
                 src="https://i.ibb.co/s5RG01W/wood-1.png"
+                alt="afloor aksesoris lantai dan vinyl"
                 className={homeStyles.icon}
               />
               <button
@@ -114,7 +115,7 @@ const HomeComponent: React.FC = () => {
               <p>Amplop bubble</p>
               <img
                 src="https://i.ibb.co/sQp6mrL/email.png"
-                alt=""
+                alt="afloor amplop bubble"
                 className={homeStyles.icon}
               />
               <button
@@ -133,7 +134,7 @@ const HomeComponent: React.FC = () => {
               <p>Lem vinyl/PVC flooring</p>
               <img
                 src="https://i.ibb.co/Kxppwx0/bucket.png"
-                alt=""
+                alt="afloor lem untuk vinyl dan lem pvc flooring"
                 className={homeStyles.icon}
               />
               <button
@@ -156,7 +157,7 @@ const HomeComponent: React.FC = () => {
                 <div className={homeStyles.card} key={i}>
                   <img
                     src={x.img}
-                    alt="test"
+                    alt="afloor produk"
                     className={homeStyles.productImg}
                   />
                   <p>{x.name}</p>
@@ -171,16 +172,19 @@ const HomeComponent: React.FC = () => {
           <div>
             <img
               src="https://i.ibb.co/tLv4T7x/sample.jpg"
+              alt="afloor banner"
               className={homeStyles.productImg}
             />
           </div>
           <div className={homeStyles.flexColumn}>
             <img
               src="https://i.ibb.co/hy0w3Ww/welcome-750.jpg"
+              alt="afloor banner"
               className={homeStyles.productImgSub}
             />
             <img
               src="https://i.ibb.co/9Hbh1Rh/various-color-variant.jpg"
+              alt="afloor banner"
               className={homeStyles.productImgSub}
             />
           </div>
@@ -205,7 +209,7 @@ const HomeComponent: React.FC = () => {
               {Array.from({ length: 5 }, (_, i) => (
                 <img
                   src="https://i.ibb.co/j3BSYPQ/pngfind-com-white-stars-png-297637.png"
-                  alt=""
+                  alt="afloor review stars"
                   className={homeStyles.reviewIcon}
                   key={i}
                 />
@@ -214,9 +218,7 @@ const HomeComponent: React.FC = () => {
 
             <button
               onClick={() =>
-                openLink(
-                  "https://www.google.com/search?q=afloor&oq=afloor+&aqs=chrome.0.69i59j0i10i512j69i60l6.1510j0j4&sourceid=chrome&ie=UTF-8#lrd=0x2e69f5bc3436bd21:0x2856ebab429e5049,3,,,"
-                )
+                openLink("https://g.page/r/CUlQnkKr61YoEAg/review")
               }
             >
               Write a review

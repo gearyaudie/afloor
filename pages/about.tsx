@@ -18,7 +18,7 @@ const about = () => {
           <div className={AboutStyles.imgContainer}>
             <img
               src="https://i.ibb.co/9Hbh1Rh/various-color-variant.jpg"
-              alt=""
+              alt="afloor"
             />
           </div>
           <div>

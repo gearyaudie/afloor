@@ -15,7 +15,7 @@ const Home = () => {
           name="description"
           content="Aksesoris lantai vinyl murah, lem untuk lantai vinyl, PVC, parket. "
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.afloor88.com/" />
       </Head>
       <HomeComponent />
     </>
