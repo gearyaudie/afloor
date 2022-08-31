@@ -9,12 +9,26 @@ const Home = () => {
       <Head>
         <meta
           name="keywords"
-          content="lem vinyl, lem aksesoris vinyl, aksesoris vinyl, aksesoris lantai vinyl, aksesoris pvc, lantai motif kayu pvc, harga lem vinyl, harga lantai vinyl, lantai vinyl murah, end molding, stepnosing, parket, lis kayu, afloor, efloor"
+          content="Lantai vinyl, lem vinyl, lem aksesoris vinyl, aksesoris vinyl, aksesoris lantai vinyl, aksesoris pvc, lantai motif kayu pvc, harga lem vinyl, harga lantai vinyl, lantai vinyl murah, end molding, stepnosing, parket, lis kayu, afloor, efloor"
         />
         <meta
           name="description"
           content="Aksesoris lantai vinyl murah, lem untuk lantai vinyl, PVC, parket. "
         />
+        <meta
+          property="og:title"
+          content="Lantai vinyl, aksesoris lantai vinyl, parket, lem vinyl | afloor"
+        />
+        <meta
+          property="og:description"
+          content="Aksesoris lantai vinyl murah, lem untuk lantai vinyl, PVC, parket. "
+        />
+        <meta property="og:site_name" content="afloor88.com" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/rQg80m2/pexels-maksim-goncharenok-4352247.webp"
+        />
+        <meta property="og:publisher" content="https://www.afloor.com" />
         <link rel="canonical" href="https://www.afloor88.com/" />
       </Head>
       <HomeComponent />

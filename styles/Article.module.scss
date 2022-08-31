@@ -1,3 +1,7 @@
+$primary-color: #fe5464;
+$primary-subcolor: #fcc0c5;
+$text-color: #808080;
+
 .container {
   max-width: 900px;
   margin: 125px auto;
@@ -11,5 +15,24 @@
     color: #292929;
     font-weight: 500;
     font-size: 20px;
+  }
+
+  .linkToBtn {
+    background: #333;
+    border: 3px solid #fff;
+    color: white;
+
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 15px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .linkToBtn:hover {
+    background: #fff;
+    border: 3px solid $primary-color;
+    color: $primary-color;
   }
 }
