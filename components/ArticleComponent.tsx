@@ -30,9 +30,9 @@ const ArticleComponent = () => {
 
         <div className={styles.cardContainer}>
           {ArticlesList &&
-            ArticlesList.map((x) => {
+            ArticlesList.map((x, i) => {
               return (
-                <div className={styles.card}>
+                <div className={styles.card} key={i}>
                   <h1>{x.title}</h1>
                   <p>{truncateString(x.meta.description, 150)}</p>
                   <button onClick={() => openLink(x.linkToArticle)}>
