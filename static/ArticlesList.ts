@@ -2,6 +2,7 @@ export const ArticlesList = [
   {
     slug: "lem-vinyl-parket-pvc",
     title: "Lem untuk lantai vinyl dan lantai parket",
+    linkToArticle: "/artikel/lem-vinyl-parket-pvc",
     meta: {
       title: "Lem untuk pemasangan lantai vinyl dan lantai parket",
       description:
@@ -11,16 +12,5 @@ export const ArticlesList = [
     },
     body: `<p>Dalam pemasangan lantai vinyl dan lantai parket terkadang dibutuhkan perekat agar lantai yang dipasang lebih kokoh dan kuat. Afloor menyediakan lem vinyl / lem parket dalam kemasan 1kg, 4kg dan 20kg. Lem yang dijual oleh afloor ini adalah jenis lem yang kuat, biasa digunakan untuk lantai vinyl, parket, karpet, dsb. Bekas lem ini juga mudah dibersihkan, hanya dengan sabun solek sisa lem sudah bisa dibersihkan.</p>`,
     linkToProduct: "https://www.tokopedia.com/afloor/etalase/lem",
-  },
-
-  {
-    slug: "",
-    title: "",
-    meta: {
-      title: "",
-      description: "",
-      keywords: "",
-    },
-    body: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio pariatur modi voluptates? Deleniti earum illo nulla est eum adipisci.</p>`,
   },
 ];

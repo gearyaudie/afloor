@@ -23,12 +23,10 @@ const Home = () => {
           property="og:description"
           content="Aksesoris lantai vinyl murah, lem untuk lantai vinyl, PVC, parket. "
         />
-        <meta property="og:site_name" content="afloor88.com" />
         <meta
           property="og:image"
           content="https://i.ibb.co/rQg80m2/pexels-maksim-goncharenok-4352247.webp"
         />
-        <meta property="og:publisher" content="https://www.afloor.com" />
         <link rel="canonical" href="https://www.afloor88.com/" />
       </Head>
       <HomeComponent />

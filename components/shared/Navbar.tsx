@@ -6,26 +6,49 @@ const Navbar = () => {
     window.open(link, "_blank");
   };
 
+  const content = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Artikel",
+      link: "/artikel",
+    },
+    // {
+    //   name: "Produk",
+    //   link: "/produk",
+    // },
+  ];
+
   return (
     <>
       <nav className={navbarStyles.navbar}>
         <div className={`${navbarStyles.container2} ${navbarStyles.flex}`}>
+          <div>
+            <img
+              src="https://i.ibb.co/CJxjrK7/afloor-icon.png"
+              alt=""
+              className={navbarStyles.icon}
+            />
+          </div>
           <nav>
             <ul>
-              <li>
-                <Link href="/">
-                  <a>
-                    <span className={navbarStyles.special}>1. </span>Home
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/artikel">
-                  <a>
-                    <span className={navbarStyles.special}>2. </span>Artikel
-                  </a>
-                </Link>
-              </li>
+              {content &&
+                content.map((x, i) => {
+                  return (
+                    <li key={i}>
+                      <Link href={x.link}>
+                        <a>
+                          <span className={navbarStyles.special}>
+                            {i + 1}.{" "}
+                          </span>
+                          {x.name}
+                        </a>
+                      </Link>
+                    </li>
+                  );
+                })}
             </ul>
           </nav>
         </div>

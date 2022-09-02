@@ -2,6 +2,66 @@ $primary-color: #fe5464;
 $primary-subcolor: #fcc0c5;
 $text-color: #808080;
 
+.bg {
+  max-width: 1000px;
+  margin: 150px auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background-color: #292929;
+
+  p {
+    color: #808080;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .section {
+    margin-top: 25px;
+
+    h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d3d3d3;
+    }
+  }
+
+  .cardContainer {
+    display: flex;
+    .card {
+      margin-top: 20px;
+      margin-right: 20px;
+      width: 350px;
+      padding: 20px;
+      background: #333;
+      text-align: center;
+
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+      }
+      p {
+        color: #d3d3d3;
+        font-size: 14px;
+        text-align: left;
+        margin-top: 25px;
+        line-height: 1.4;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 75%;
+        text-align: center;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
 .container {
   max-width: 900px;
   margin: 125px auto;

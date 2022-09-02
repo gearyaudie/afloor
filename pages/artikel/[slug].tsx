@@ -18,6 +18,7 @@ const Article = () => {
         <meta name="description" content={content?.meta.description} />
         <meta property="og:description" content={content?.meta.description} />
         <meta property="og:title" content={content?.meta.title} />
+        <meta property="og:type" content="article" />
         <meta name="keywords" content={content?.meta.keywords} />
         <title>{content?.meta.title}</title>
       </Head>

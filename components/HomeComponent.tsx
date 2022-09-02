@@ -230,7 +230,10 @@ const HomeComponent: React.FC = () => {
       <div className={homeStyles.footer}>
         <div className={homeStyles.footerContent}>
           <h1>
-            a<span className={homeStyles.textPrimary}>floor</span>
+            <img
+              src="https://i.ibb.co/P5xpGvb/Whats-App-Image-2022-09-01-at-9-24-21-PM.jpg"
+              alt="afloor-logo"
+            />
           </h1>
           <p>
             Call: 0856-1153-725 | WhatsApp: +62 856-1153-725 | email:
