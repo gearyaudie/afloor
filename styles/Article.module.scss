@@ -5,6 +5,7 @@ $text-color: #808080;
 .bg {
   max-width: 1000px;
   margin: 150px auto 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +27,15 @@ $text-color: #808080;
 
   .cardContainer {
     display: flex;
+    margin: 20px 0px;
+    .cardImg {
+      width: 350px;
+      margin: 0px !important;
+      padding: 0px !important;
+    }
     .card {
-      margin-top: 20px;
+      margin: 0px !important;
+      margin-top: -10px !important;
       margin-right: 20px;
       width: 350px;
       padding: 20px;
@@ -75,6 +83,21 @@ $text-color: #808080;
     color: #292929;
     font-weight: 500;
     font-size: 20px;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex: row;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contentImg {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 30px auto 20px;
   }
 
   .linkToBtn {

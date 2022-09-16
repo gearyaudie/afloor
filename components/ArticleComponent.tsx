@@ -32,12 +32,19 @@ const ArticleComponent = () => {
           {ArticlesList &&
             ArticlesList.map((x, i) => {
               return (
-                <div className={styles.card} key={i}>
-                  <h1>{x.title}</h1>
-                  <p>{truncateString(x.meta.description, 150)}</p>
-                  <button onClick={() => openLink(x.linkToArticle)}>
-                    Lihat artikel
-                  </button>
+                <div key={i}>
+                  <img
+                    src={x.cardImg}
+                    alt={x.keyword}
+                    className={styles.cardImg}
+                  />
+                  <div className={styles.card}>
+                    <h1>{x.title}</h1>
+                    <p>{truncateString(x.meta.description, 150)}</p>
+                    <button onClick={() => openLink(x.linkToArticle)}>
+                      Lihat artikel
+                    </button>
+                  </div>
                 </div>
               );
             })}

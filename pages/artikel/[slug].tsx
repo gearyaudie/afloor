@@ -24,6 +24,15 @@ const Article = () => {
       </Head>
       <div className={styles.container}>
         <h1>{content?.title}</h1>
+        <div className={styles.imgContainer}>
+          {content?.image && (
+            <img
+              src={content.image}
+              alt={content?.keyword}
+              className={styles.contentImg}
+            />
+          )}
+        </div>
         <p dangerouslySetInnerHTML={{ __html: content?.body }}></p>
         <button
           onClick={() => openLink(content?.linkToProduct)}
