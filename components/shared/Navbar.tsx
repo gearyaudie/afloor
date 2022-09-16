@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 import navbarStyles from "../../styles/Navbar.module.scss";
 
 const Navbar = () => {
@@ -21,6 +22,8 @@ const Navbar = () => {
     // },
   ];
 
+  const [sidebarOpened, setSidebarOpened] = React.useState(false);
+
   return (
     <>
       <nav className={navbarStyles.navbar}>
@@ -32,7 +35,7 @@ const Navbar = () => {
               className={navbarStyles.icon}
             />
           </div>
-          <nav>
+          <nav className={navbarStyles.menuDesktop}>
             <ul>
               {content &&
                 content.map((x, i) => {
@@ -50,6 +53,36 @@ const Navbar = () => {
                   );
                 })}
             </ul>
+          </nav>
+          <nav className={navbarStyles.menuMobile}>
+            <button onClick={() => setSidebarOpened(true)}>
+              <img src="https://i.ibb.co/C62YK1m/icons8-menu-30.png" alt="" />
+            </button>
+            <div
+              className={
+                sidebarOpened
+                  ? `${navbarStyles.navSidebar} ${navbarStyles.active}`
+                  : navbarStyles.navSidebar
+              }
+            >
+              <button
+                className={navbarStyles.closeIcon}
+                onClick={() => setSidebarOpened(false)}
+              >
+                <img
+                  src="https://i.ibb.co/Ykxn2Mk/CITYPNG-COM-PNG-Close-X-Logo-White-Icon-736x736.png"
+                  alt=""
+                />
+              </button>
+              <div className={navbarStyles.navSidebarContent}>
+                <li onClick={() => setSidebarOpened(false)}>
+                  <Link href="/">Home</Link>
+                </li>
+                <li onClick={() => setSidebarOpened(false)}>
+                  <Link href="/artikel">Artikel</Link>
+                </li>
+              </div>
+            </div>
           </nav>
         </div>
       </nav>
